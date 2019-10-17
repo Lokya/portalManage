@@ -10,7 +10,7 @@
 
 - front 前端代码
 
-- express 后端代码
+- server 后端代码
 
 ## 备注
 
