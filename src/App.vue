@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Menu />
+    <Carousel />
   </div>
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
+import Carousel from './components/Carousel.vue'
 
 export default {
   name: 'app',
   components: {
-    Menu
+    Carousel
   }
 }
 </script>
@@ -23,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
