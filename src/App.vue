@@ -1,18 +1,21 @@
 <template>
   <div id="app">
+    <Menu />
     <Carousel />
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import Carousel from './components/Carousel.vue';
+import Menu from './components/Menu.vue';
 
 export default {
   name: 'app',
   components: {
-    Carousel
-  }
-}
+    Carousel,
+    Menu,
+  },
+};
 </script>
 
 <style lang="less">
