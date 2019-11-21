@@ -9,20 +9,24 @@
 </template>
 
 <script>
+import banner1 from '../../public/banner/1.jpg';
+import banner2 from '../../public/banner/2.jpg';
+import banner3 from '../../public/banner/3.jpg';
+
 export default {
   name: 'Carousel',
   data() {
     return {
       bannerHeight: window.innerHeight,
       elCarouselItem: {
-        lineHeight: window.innerHeight + 'px'
+        lineHeight: `${window.innerHeight}px`,
       },
       items: [
-        require('../../public/banner/1.jpg'),
-        require('../../public/banner/2.jpg'),
-        require('../../public/banner/3.jpg'),
-      ]
-    }
+        banner1,
+        banner2,
+        banner3,
+      ],
+    };
   },
 };
 </script>

@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <Menu />
-    <Carousel />
+    <TopBar bgClolor="rgba(0,0,0,0.5)" barHeigth='50px'>
+      <Menu :menuDatas="[{title: 'hello', key: 1, children: { title: '123'}}]" menuHeight='40' />
+    </TopBar>
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue';
-import Menu from './components/Menu.vue';
-
+import TopBar from './components/TopBar';
+import Menu from './components/Menu';
 export default {
   name: 'app',
   components: {
-    Carousel,
+    TopBar,
     Menu,
   },
 };
